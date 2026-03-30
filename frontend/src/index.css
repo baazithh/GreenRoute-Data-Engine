@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased;
+    background-image: radial-gradient(circle at 50% 0%, #022c22 0%, #020617 80%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-slate-900/40 backdrop-blur-md border border-white/10 shadow-xl rounded-2xl;
+  }
+  
+  .glass-header {
+    @apply bg-slate-950/60 backdrop-blur-lg border-b border-white/10;
+  }
+  
+  .neon-text-green {
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.7), 0 0 20px rgba(16, 185, 129, 0.5);
+  }
+}
